@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>嘉软Markdown文档系统</title>
+
+<link rel="stylesheet" type="text/css" href="css/easyui-metro/easyui.css">
+<link rel="stylesheet" href="css/kube.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/prettify/r298/prettify.css">
+<script type="text/javascript" src="http://apps.bdimg.com/libs/prettify/r298/prettify.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script src="js/showdown.min.js" ></script>
+<script src="js/md-docs.js" ></script>
+</head>
+<body class="easyui-layout" style="text-align:left">
+<div id="head-menu">
+	<div id="navbar-1" class="navbar navbar-right">
+		<ul>
+			<li><a href="http://www.jrtk.net">首页</a></li>
+			<li><a href="http://lib.jrtk.net/docs/">演示</a></li>
+			<li><a href="#">QQ群 32550793</a></li>
+		</ul>
+	</div>
+</div>
+<div region="north" border="false" class="group wrap header" style="height:66px;font-size:100%">
+	<div class="content">
+		<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-2">
+			<span>嘉软文档系统</span>
+		</div>
+		<div id="elogo" class="navbar navbar-left">
+			<ul>
+				<li>
+				<a href="http://www.jrtk.net"><img src="images/logo.png" alt="嘉软文档系统"/></a>
+				</li>
+			</ul>
+		</div>
+		<div id="navbar-2" class="navbar navbar-right">
+		<ul>
+			<li><a href="http://www.jrtk.net">首页</a></li>
+			<li><a href="http://lib.jrtk.net/docs/">演示</a></li>
+			<li><a href="#">QQ群 32550793</a></li>
+		</ul>
+		</div>
+		<div style="clear:both">
+		</div>
+	</div>
+</div>
+<div region="west" split="true" title="文档导航" style="width:15%;min-width:180px;padding:5px;">
+	<ul class="easyui-tree" id="navtree" data-options="url:'nav.json',method:'get',animate:true"></ul>
+</div>
+<div region="center">
+	<div id="tt" class="easyui-tabs" fit="true" border="false" plain="true"></div>
+</div>
+</body>
+</html>
