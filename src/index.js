@@ -1,8 +1,13 @@
+import 'easyui';
+import './easyui/metro/easyui.css'; //version 1.5.1
+import './css/kube.css';
+import './css/main.css';
+import './prettify/prettify.css';
+
 $(function(){
 	var converter = new showdown.Converter();
 	var options = converter.getOptions();
 	options.tables = true;
-	
 	function openTab(file,title,closable){
 		if ($('#tt').tabs('exists',title)){
 			$('#tt').tabs('select', title);
@@ -20,7 +25,7 @@ $(function(){
 	}
 	openTab('README.md','jrdocs文档首页',false);
 	$('#tt').tabs({
-		onLoad:function(panel){
+		onLoad:function(panel){ 
 			var plugin = panel.panel('options').title;
 			panel.find('pre').each(function(){
 				var data = $(this).find('code').text(); 
@@ -34,11 +39,14 @@ $(function(){
 				pre.text(data);
 				$(this).remove();
 			});
-			prettyPrint();
+			//prettyPrint();
 		}
 	});
 	
 	$('#navtree').tree({
+		url: 'nav.json',
+		method: 'get',
+		animate:true,
 		onClick: function (node) { 
 			if (!node.children){ 
 				openTab(node.id,node.text,true); 

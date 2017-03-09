@@ -4,17 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jrdocs - 嘉软Markdown文档系统</title>
-
-<link rel="stylesheet" type="text/css" href="css/easyui-metro/easyui.css">
-<link rel="stylesheet" href="css/kube.css" type="text/css"/>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" type="text/css" href="//apps.bdimg.com/libs/prettify/r298/prettify.css">
-<script type="text/javascript" src="//apps.bdimg.com/libs/prettify/r298/prettify.js"></script>
-<script type="text/javascript" src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-<script src="js/showdown.min.js" ></script>
-<script src="js/md-docs.js" ></script>
+<script src="dist/index.js" ></script>
 </head>
 <body class="easyui-layout" style="text-align:left">
 <div id="head-menu">
@@ -35,7 +25,7 @@
 		<div id="elogo" class="navbar navbar-left">
 			<ul>
 				<li>
-				<a href="http://www.jrtk.net"><img src="images/logo.png" alt="嘉软文档系统"/></a>
+				<a href="http://www.jrtk.net"><img src="src/images/logo.png" alt="嘉软文档系统"/></a>
 				</li>
 			</ul>
 		</div>
@@ -52,7 +42,7 @@
 	</div>
 </div>
 <div region="west" split="true" title="文档导航" style="width:15%;min-width:180px;padding:5px;">
-	<ul class="easyui-tree" id="navtree" data-options="url:'nav.json',method:'get',animate:true"></ul>
+	<ul class="easyui-tree" id="navtree"></ul>
 </div>
 <div region="center">
 	<div id="tt" class="easyui-tabs" fit="true" border="false" plain="true"></div>
