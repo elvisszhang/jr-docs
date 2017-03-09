@@ -3,7 +3,8 @@
 	"text":"演示文档",
 	"children":[
 		{"id":"md/showdown.md","text":"Showdown文档"},
-		{"id":"md/flyui.md","text":"FlyUI文档"}
+		{"id":"md/flyui.md","text":"FlyUI文档"},
+		{"id":"md/kaddle.md","text":"芒果云文档"}
 	]
 }
 ]
