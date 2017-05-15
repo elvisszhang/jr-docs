@@ -10,7 +10,7 @@ module.exports = {
     },
 //入口文件输出配置
     output: {
-        path: './dist',
+        path: path.resolve(rootDir,'./dist'),
         filename: '[name].js'
     },
     module: {
