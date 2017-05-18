@@ -88,20 +88,22 @@ textarea.html,textarea.js{
 	box-sizing: content-box;
 }
 
-.doc-table{
+table{
 	border-collapse:collapse;
 	border-spacing:0;
-	width:100%;
 	margin-bottom: 1.65em;
 }
-.doc-table th,.doc-table td{
+table th,table td{
 	border:1px solid #8CACBB;
 	padding:0.3em 0.7em;
 }
-.doc-table th{
+table th{
 	background:#eee;
 }
-.doc-table pre{
+table tr:nth-child(even){
+ 	background: #F5F5F5;
+}
+table pre{
 	font-family:Verdana;
 	font-size:12px;
 	color:#006600;
@@ -110,7 +112,7 @@ textarea.html,textarea.js{
 	margin: 12px 0;
 	line-height: 120%;
 }
-.doc-table p{
+table p{
 	margin: 14px 0;
 	line-height: 100%;
 }

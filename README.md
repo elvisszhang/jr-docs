@@ -25,9 +25,12 @@
 杭州嘉软科技有限公司，公司官网 [http://www.jrtk.net](http://www.jrtk.net)
  
 # 编译方法
+
+```
   npm install --registry=https://registry.npm.taobao.org
   npm run build
- 
+```
+
 # 使用方法 (只需三步)
 第一步 搭建WEB服务器 （只要支持静态页面即可）
 
@@ -49,3 +52,6 @@
 
 # 技术支持
 有什么疑问请加官网QQ群32550793咨询。
+
+# 鸣谢
+感谢QQ29170496（深海）提供的table的样式。
